@@ -18,28 +18,10 @@ body{
     display:inline-block;
     float: right;
     position:relative;
-    margin-top:10px;
-    margin-right:5px;
     visibility: hidden;
+    color:silver;
 }
 
-.x1{
-    position:absolute;
-    background-color:silver;
-    width: 10px;
-    height: 3px;
-    transform: rotate(45deg);
-    visibility: inherit;
-}
-
-.x2{
-    position:absolute;
-    background-color:silver;
-    width: 10px;
-    height: 3px;
-    transform: rotate(-45deg);
-    visibility:inherit;
-}
 
 .item:hover .x{
     visibility:visible;
