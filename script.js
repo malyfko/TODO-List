@@ -10,7 +10,11 @@ $(document).ready(function(){
             $('ul').append('<li class="item">'+$item+'<div class="x">x</div>'+'</li>');
             document.getElementById("inp").value = "";
             s++;
-            $('.sum').html(s +' elements');
+            if(s === 1){
+            $('#sum').html(s +' item');
+        } else{
+        	$('#sum').html(s +' items');
+        }
         }
 	});
 	
@@ -18,7 +22,11 @@ $(document).ready(function(){
 	    $(this).parent().addClass("strikethrough");
 	    $(this).parent().hide('slow', function(){ $(this).remove(); });
 	    s--;
-	    $('.sum').html(s +' elements');
+	    if(s === 1){
+            $('#sum').html(s +' item');
+        } else{
+        	$('#sum').html(s +' items');
+        }
 	});
     
     $(document).on('click', '.item', function(){
@@ -28,7 +36,11 @@ $(document).ready(function(){
     $('#delete').click(function(){
         $('ul').empty();
         s = 0;
-        $('.sum').html(s +' elements');
+        if(s === 1){
+            $('#sum').html(s +' item');
+        } else{
+        	$('#sum').html(s +' items');
+        }
     });
     
 });
