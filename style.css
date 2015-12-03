@@ -8,7 +8,7 @@ body{
 
 .list ul{
     position:relative;
-    width:200px;
+    width:230px;
     text-align:left;
     display:inline-block;
     list-style:none;
@@ -74,9 +74,20 @@ button{
     font-family:"Comic Sans MS", cursive, sans-serif;
 }
 
-.sum{
-    margin-top:40px;
-    text-align:center;
+.footer{
+    width:200px;
+    height:25px;
+    margin:auto;
+}
+
+.footer #sum {
+    display:inline-block;
+    width:80px;
+    float:left;
+}
+
+.footer #delete{
+    float:right;
 }
 
 .strikethrough{
